@@ -13,7 +13,7 @@ function Dashboard() {
             return;
         }
 
-        axios.get('http://localhost:4000/api/auth/me', {
+        axios.get('https://requin-server.onrender.com/api/auth/me', {
             headers: { 'x-auth-token': token },
         }).then((response) => {
             setUser(response.data);
